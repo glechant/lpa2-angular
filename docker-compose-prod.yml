@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+  angular_01_prod:
+    container_name: angular_01_prod
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    ports:
+    - 80:80

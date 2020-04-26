@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  angular_01_dev:
+    container_name: angular_01_dev
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    volumes:
+    - ./src:/app/src
+    ports:
+    - 4200:4200
